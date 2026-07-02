@@ -118,8 +118,11 @@ git push -u origin main
 1. 打开你的 GitHub 仓库页面
 2. 进入 **Settings**（设置）→ 左侧 **Pages**
 3. 在 **Build and deployment** 区域：
-   - **Source** 选择 **GitHub Actions**（不要选 Deploy from a branch）
-4. 保存后无需其他配置，页面会提示等待第一次 Actions 部署
+   - **Source** 选择 **Deploy from a branch**
+   - **Branch** 选择 `gh-pages`，目录选 `/ (root)`
+4. 保存后等待第一次 workflow 运行完成，Pages 会自动从 `gh-pages` 分支发布
+
+> **注意**：如果之前选的是 **GitHub Actions**，请改成上面的 **Deploy from a branch → gh-pages**。当前 workflow 会把 `site/` 推送到 `gh-pages` 分支，比 `deploy-pages` 更稳定，可避免 `deployment_queued` 卡住的问题。
 
 ### 第四步：首次手动触发部署
 
@@ -139,13 +142,12 @@ git push -u origin main
 | Install dependencies | 安装依赖 |
 | Run daily pipeline | 抓取 arXiv、生成日报和网站 |
 | Commit report history | 将 `output/` 提交回仓库 |
-| Upload Pages artifact | 上传 `site/` 静态文件 |
-| Deploy to GitHub Pages | 发布到 Pages |
+| Deploy to GitHub Pages | 将 `site/` 推送到 `gh-pages` 分支并发布 |
 
-若 **Deploy to GitHub Pages** 第一次失败并提示需要配置 environment：
+若 **Deploy to GitHub Pages** 失败：
 
-1. 回到 **Settings → Pages**，确认 Source 为 **GitHub Actions**
-2. 再次手动 Run workflow，通常第二次即可成功
+1. 确认 **Settings → Pages** 的 Source 为 **Deploy from a branch → gh-pages → / (root)**
+2. 取消所有正在运行的旧 workflow，再重新 Run workflow
 
 ### 第五步：访问你的网站
 
@@ -188,11 +190,11 @@ git push -u origin main
 - 点开失败步骤查看日志，常见原因是 arXiv 网络超时，重试即可
 - 本地先执行 `python main.py --once` 确认能通过
 
-**3. 网站 404**
+**3. 网站 404 或部署卡在 deployment_queued**
 
+- 确认 Pages Source 为 **Deploy from a branch → gh-pages → / (root)**，不要用 GitHub Actions 方式
+- 取消所有卡住的 workflow，推送最新代码后重新 Run workflow
 - 等待 1～5 分钟再刷新（DNS 和 CDN 有缓存）
-- 确认 Pages Source 是 **GitHub Actions** 而非 branch
-- 确认最后一次 workflow 的 Deploy 步骤成功
 
 **4. 样式或链接错乱**
 
@@ -214,10 +216,10 @@ git push -u origin main
 ### 部署后目录说明
 
 ```
-仓库中（提交到 Git）          Actions 运行时生成（不提交 site/）
-├── main.py                  ├── site/index.html      → 发布到 Pages
-├── config.yaml              ├── site/reports/*.html
-├── paper_reading/           └── output/reports/*.md  → 提交回仓库
+仓库中（提交到 Git）          Actions 运行时生成
+├── main.py                  ├── site/  → 推送到 gh-pages 分支 → 发布到 Pages
+├── config.yaml              └── output/reports/*.md  → 提交回 main 分支
+├── paper_reading/
 └── output/reports/*.md
 ```
 
