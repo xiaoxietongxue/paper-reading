@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.00627v1",
+  "title": "AGI Maze as a Benchmark Framework for World-Modeling Agents",
+  "authors": [
+    "Alexey Potapov"
+  ],
+  "abstract": "Large language models (LLMs) are powerful pattern-completion systems, but their default operating mode - predicting the next token from a static context - does not reliably produce persistent, manipulable representations of an external world. Many tasks that look like \"reasoning\" in text become substantially harder once the environment is partially observable, stateful, and requires memory and structured hypotheses about hidden state. AGI Maze is a lightweight framework for building such environments without requiring high-dimensional sensory inputs. It provides a family of grid-based maze tasks with a clean API and multiple difficulty regimes. The goal is to create benchmarks where agents must learn and use world state representations, not just infer a local rule over readily provided observations. We provide an initial evaluation of several vanilla LLMs on simple mazes showing that they fail to represent mazes internally at LLM inference time. We also introduce a baseline agent, which is allowed to use its message history as a working memory to construct descriptions of observations at agentic runtime. Although this can improve performance, it is still insufficient for an LLM agent to reliably solve even small mazes within a step budget that is more than enough for humans.",
+  "categories": [
+    "cs.AI"
+  ],
+  "url": "https://arxiv.org/abs/2607.00627v1",
+  "published": "2026-07-01T08:43:08+00:00",
+  "updated": "2026-07-01T08:43:08+00:00",
+  "matched_keywords": [
+    "large language model",
+    "agent"
+  ],
+  "score": 3.9799999999999995,
+  "summary": ""
+}

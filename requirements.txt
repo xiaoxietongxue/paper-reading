@@ -1,0 +1,7 @@
+APScheduler
+feedparser
+markdown
+openai
+python-dotenv
+PyYAML
+requests

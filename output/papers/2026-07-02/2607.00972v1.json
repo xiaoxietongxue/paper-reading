@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.00972v1",
+  "title": "Bayesian Uncertainty Propagation for Agentic RAG Pipelines: A Proof-of-Concept Study on Multi-Hop Question Answering",
+  "authors": [
+    "Louis Donaldson",
+    "Connor Walker",
+    "Koorosh Aslansefat",
+    "Yiannis Papadopoulos"
+  ],
+  "abstract": "Trustworthy deployment of Agentic Retrieval-Augmented Generation (RAG) systems requires mechanisms for estimating when multi-stage reasoning pipelines may fail. This paper presents an uncertainty-aware Agentic Retrieval-Augmented Generation (RAG) framework in which planner, evaluator and generator stages produce uncertainty signals derived from semantic divergence and generator self-evaluation. These signals are propagated through a Bayesian Network (BN) to estimate system-level uncertainty and provide node-level indicators of potential failure points across the workflow. The approach is evaluated on StrategyQA and HotpotQA using GPT-3.5-Turbo and GPT-4.1-Nano, with Area Under the Receiver Operating Characteristic Curve (AUROC), Area Under the Accuracy-Rejection Curve (AUARC), Expected Calibration Error (ECE), and Brier Score used to assess discrimination, selective prediction and calibration. Results show that Bayesian propagation is more effective on HotpotQA, where uncertainty accumulates across multi-hop reasoning stages, while StrategyQA exposes limitations caused by miscalibration and unreliable upstream signals. The study positions Bayesian uncertainty propagation as a promising but preliminary mechanism for monitoring Agentic RAG systems, with future validation required in industrial domains such as Offshore Wind (OSW) maintenance decision support.",
+  "categories": [
+    "cs.AI"
+  ],
+  "url": "https://arxiv.org/abs/2607.00972v1",
+  "published": "2026-07-01T14:08:58+00:00",
+  "updated": "2026-07-01T14:08:58+00:00",
+  "matched_keywords": [
+    "agent",
+    "retrieval augmented generation"
+  ],
+  "score": 4.1,
+  "summary": ""
+}
