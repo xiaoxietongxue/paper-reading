@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2607.01883v1",
+  "title": "PairCoder++: Pair Programming as a Universal Paradigm for Verified Code-Driven Multimodal and Structured-Artifact Generation",
+  "authors": [
+    "Junhao Chen",
+    "Xiang Li",
+    "Mingjin Chen",
+    "Boran Zhang",
+    "Henghaofan Zhang",
+    "Yibin Xu",
+    "Yuehan Cui",
+    "Fangsheng Weng",
+    "Fei Ma",
+    "Qi Tian",
+    "Ruqi Huang",
+    "Hao Zhao"
+  ],
+  "abstract": "Code is the medium through which large language models generate structured artifacts: charts, scientific figures, vector graphics, CAD models, 3D scenes, and hardware designs are all produced by writing programs. In this regime single pass inference is brittle, because the compiler, renderer, or simulator that decides whether the artifact exists is invisible to the model. We present PairCoder, which grounds review in the toolchain and realizes it as two agent pair programming: a Driver agent writes the program, a Navigator agent reviews it against verification evidence (diagnostics, execution results, and renderings of the current artifact beside the target), and the two switch roles when errors persist. Across 17 public benchmarks and seven models from three vendors, PairCoder improves essentially every benchmark whose artifact is verifiable, on full official metric suites rather than execution alone (for example, Blender scene executability 0.20 to 0.78; TikZ compile rate up 10 to 30 points on every model), at 2.9 to 9.2 times single model cost (about 7 times overall). The improvements concentrate where the toolchain provides an informative oracle and the baseline leaves headroom, and the method ties or mildly regresses where the oracle is weak; we frame pair programming as a reliable recipe for verified code driven generation.",
+  "categories": [
+    "cs.CL"
+  ],
+  "url": "https://arxiv.org/abs/2607.01883v1",
+  "published": "2026-07-02T08:36:02+00:00",
+  "updated": "2026-07-02T08:36:02+00:00",
+  "matched_keywords": [
+    "large language model",
+    "agent"
+  ],
+  "score": 4.0,
+  "summary": ""
+}
