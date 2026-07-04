@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.01936v1",
+  "title": "CausalSteward: An Agentic Divide-Conquer-Combine Copilot for Causal Discovery",
+  "authors": [
+    "Nicholas Tagliapietra",
+    "Gian Lorenzo Marchioni",
+    "Moritz Willig",
+    "Juergen Luettin",
+    "Lavdim Halilaj",
+    "Kristian Kersting"
+  ],
+  "abstract": "Learning causal models from high-dimensional data is a significant challenge, particularly in real-world settings where violations of core assumptions lead to causal identifiability issues. Although massive amounts of prior knowledge are available, and contain valuable causal information, effectively integrating this knowledge into the causal discovery process remains an open problem. We introduce CausalSTeward (CAST), a novel human-in-the-loop framework for interactively assembling large causal models. CausalSteward is a multi-agent collaborative system that tackles high-dimensional causality through a divide-and-conquer approach where large clusters of variables are iteratively partitioned and then separately analyzed. Our framework fuses prior knowledge with a data-driven approach by using tailored tools such as retrieval augmented generation and conditional independence tests. Finally, we use this work to examine the capabilities and limitations of causal reasoning in multi-agent frameworks, and how the human-in-the-loop can contribute to accurate and trustworthy results.",
+  "categories": [
+    "cs.MA",
+    "cs.AI"
+  ],
+  "url": "https://arxiv.org/abs/2607.01936v1",
+  "published": "2026-07-02T09:29:10+00:00",
+  "updated": "2026-07-02T09:29:10+00:00",
+  "matched_keywords": [
+    "agent",
+    "retrieval augmented generation"
+  ],
+  "score": 3.9799999999999995,
+  "summary": ""
+}
