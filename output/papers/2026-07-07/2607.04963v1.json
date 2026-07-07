@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.04963v1",
+  "title": "STAPO: Selective Trajectory-Aware Policy Optimization for LLM Agent Training",
+  "authors": [
+    "Qiuyi Qi",
+    "Tian Liang",
+    "Mutian Bao",
+    "Jinjian Zhang",
+    "Dongnan Liu",
+    "Wei Zhou",
+    "Linjian Mo",
+    "Ming Kong",
+    "Jie Liu",
+    "Feng Zhang",
+    "Qiang Zhu"
+  ],
+  "abstract": "Reinforcement Learning (RL) is the dominant paradigm for training Large Language Model (LLM) agents on long-horizon tasks. However, sparse and delayed rewards often lead to trajectory neglect, in which agents lose focus on the task goal and interaction history at intermediate steps. Prior work has explored step-level supervision using Shannon-entropy-based uncertainty signals, which conflate inherent state complexity with agent confidence and therefore provide unreliable estimates of decision reliability. To address this issue, we propose normalized entropy, which measures confidence deviations relative to an agent's average behavior under a given state, thereby strengthening the association between low-quality actions and trajectory neglect. Building on this insight, we introduce Selective Trajectory-Aware Policy Optimization (STAPO), a hierarchical group-based RL framework. STAPO leverages normalized entropy to locate outlier steps associated with trajectory neglect and optimizes them via a joint mechanism of trajectory-aware reward and trajectory-independent penalty, enhancing trajectory awareness while preserving training stability. Extensive experiments on ALFWorld, WebShop, and Search-Augmented QA demonstrate that STAPO achieves state-of-the-art performance while substantially alleviating trajectory neglect, validating its effectiveness and robustness for agentic tasks.",
+  "categories": [
+    "cs.AI"
+  ],
+  "url": "https://arxiv.org/abs/2607.04963v1",
+  "published": "2026-07-06T11:50:06+00:00",
+  "updated": "2026-07-06T11:50:06+00:00",
+  "matched_keywords": [
+    "large language model",
+    "agent"
+  ],
+  "score": 4.1,
+  "summary": ""
+}

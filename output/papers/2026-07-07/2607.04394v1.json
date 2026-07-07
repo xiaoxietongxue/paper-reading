@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.04394v1",
+  "title": "MechMath Agent Team: LLM Driven Agents for Mathematical Research",
+  "authors": [
+    "Yichuan Cao",
+    "Ruichen Qiu",
+    "Junqi Liu",
+    "Jiaqi Wang",
+    "Dakai Guo",
+    "Ruyong Feng",
+    "Lihong Zhi",
+    "Xiao-Shan Gao"
+  ],
+  "abstract": "AI reasoning has become a central focus in contemporary artificial intelligence, largely driven by the success of large language models. However, mathematical research, which is characterized by non-linear derivation paths, rigorous logical requirements, and protracted exploration cycles, poses severe challenges for existing reasoning systems. To overcome these limitations, we present the MechMath Agent Team (MMAT), which is a large language model driven agent designed to serve as a co-pilot throughout the full cycle of mathematical research. We design a tripartite Harness Architecture that decouples system responsibilities into Control, Execution, and Augmentation planes, thereby reconciling rigorous logical control with the agility demanded by open-ended research. Building upon this framework, we instantiate three specialized agents: a Knowledge Base Manager, a Natural Language Prover, and a Formal Language Prover, all operating in a closed loop to produce formally certified mathematical proofs. We evaluate MMAT on open problems in Number Theory, Algebraic Complexity Theory, Differential Algebra, Operator Algebra, and Inequalities. Across a two-month deployment, 11 problems have been solved, demonstrating its capacity to act as a co-pilot throughout the entire research cycle. The contributions are threefold: a general decoupled Harness Architecture for multi-agent mathematical reasoning, its concrete instantiation in the MMAT system, and empirical validation on a diverse suite of open problems.",
+  "categories": [
+    "cs.AI",
+    "cs.SC"
+  ],
+  "url": "https://arxiv.org/abs/2607.04394v1",
+  "published": "2026-07-05T16:37:40+00:00",
+  "updated": "2026-07-05T16:37:40+00:00",
+  "matched_keywords": [
+    "large language model",
+    "agent"
+  ],
+  "score": 3.9799999999999995,
+  "summary": ""
+}

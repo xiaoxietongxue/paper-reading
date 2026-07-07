@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.04728v1",
+  "title": "Turning Off-Policy Tokens On-Policy: A Plug-in Approach for Improving LLM Alignment",
+  "authors": [
+    "Yu Li",
+    "Xiuyu Li",
+    "Mingyang Yi",
+    "Jiaxing Wang",
+    "zhangliangxu",
+    "Zhaolong Xing",
+    "Zhen Chen"
+  ],
+  "abstract": "Reinforcement learning (RL) post-training for large language models (LLMs) follows a efficient paradigm of \"rollout then update\", which inevitably results in off-policy training data. To resolve this, Importance sampling (IS) is proposed, while the token-level ratios compound over long sequences, causing severe variance exploded. A natural idea is \"transferring\" these off-policy token into on-policy token, so that the importance scores for correction are unnecessary. Following this idea, we propose Selective Importance Sampling (SIS), which is inspired by rejection sampling. Concretely, SIS implements by viewing off-policy model as proposal distribution, and implement a token-level rejection test: accepted tokens are viewed as on-policy, so that receive unit importance score, while rejected tokens retain the standard IS correction. Our proposed SIS is theoretically proved reducing the gap between token-level and sequence-level off-policy gradient estimators. The SIS acts as a plug-in that only modifies the importance ratio in the policy loss, adding negligible wall-clock overhead, and can be combine with a vast vary of RL post-training algorithms. Experiments on dense and MoE LLMs across math and agent benchmarks show that SIS consistently improves all objectives, while providing substantially stronger robustness under off-policy data.",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "url": "https://arxiv.org/abs/2607.04728v1",
+  "published": "2026-07-06T06:59:44+00:00",
+  "updated": "2026-07-06T06:59:44+00:00",
+  "matched_keywords": [
+    "large language model",
+    "agent"
+  ],
+  "score": 4.1,
+  "summary": ""
+}
